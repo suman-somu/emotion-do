@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "description": "Organize the closet",
+        "sentiment": "neutral"
+    },
+    {
+        "id": 2,
+        "description": "Clean the kitchen after dinner",
+        "sentiment": "negative"
+    },
+    {
+        "id": 3,
+        "description": "Plan a surprise birthday party for a friend",
+        "sentiment": "positive"
+    },
+    {
+        "id": 4,
+        "description": "Do the laundry",
+        "sentiment": "neutral"
+    },
+    {
+        "id": 5,
+        "description": "Go for a walk in the park",
+        "sentiment": "positive"
+    }
+]
