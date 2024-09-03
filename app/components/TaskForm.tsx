@@ -1,10 +1,11 @@
 "use client";
 
 import React, { useState } from 'react';
+import styles from '@/styles/TaskForm.module.scss';
 
 const TaskForm: React.FC = () => {
   const [description, setDescription] = useState<string>('');
-  const [tasks, setTasks] = useState<any[]>([]); // State to hold the list of tasks
+  const [tasks, setTasks] = useState<any[]>([]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -29,32 +30,32 @@ const TaskForm: React.FC = () => {
   };
 
   return (
-    <div className="space-y-6">
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="flex items-center space-x-4">
+    <div className={styles.taskForm}>
+      <form onSubmit={handleSubmit} className={styles.taskForm__form}>
+        <div className={styles.taskForm__formGroup}>
           <input
             type="text"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             placeholder="Add a new task"
             required
-            className="flex-grow px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400"
+            className={styles.taskForm__input}
           />
           <button
             type="submit"
-            className="px-4 py-2 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition duration-300"
+            className={styles.taskForm__button}
           >
             Add Task
           </button>
         </div>
       </form>
 
-      <ul className="space-y-2">
+      <ul className={styles.taskForm__taskList}>
         {tasks.map((task) => (
-          <li key={task.id} className="p-4 bg-white shadow-md rounded-lg">
-            <div className="flex justify-between items-center">
-              <span className="text-gray-800">{task.description}</span>
-              <span className="text-sm text-gray-600">{task.sentiment}</span>
+          <li key={task.id} className={styles.taskForm__taskItem}>
+            <div className={styles.taskForm__taskItem}>
+              <span className={styles.taskForm__taskItemDescription}>{task.description}</span>
+              <span className={styles.taskForm__taskItemSentiment}>{task.sentiment}</span>
             </div>
           </li>
         ))}

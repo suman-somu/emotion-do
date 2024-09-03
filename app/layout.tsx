@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+// import "./globals.css";
+import "../styles/globals.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'To-Do List with Sentiment Analysis',
+  title: 'EmotionDo',
   description: 'A simple to-do list app with sentiment analysis powered by FastAPI and Next.js',
 }
 

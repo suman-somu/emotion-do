@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# EmotionDo
+
+EmotionDo is a task management application that allows users to add tasks and classify them based on sentiment. This project consists of both a frontend and a backend, with the frontend built using Next.js and SCSS, and the backend built using FastAPI.
+
+## Features
+
+- Add tasks with sentiment classification.
+- View the list of tasks.
+- Responsive and modern UI.
+- Built with Next.js, SCSS, and FastAPI.
+
+## Prerequisites
+
+- **Node.js** (for the frontend)
+- **Python** and **Conda** (for the backend)
+- **FastAPI** for the backend
+- **Next.js** for the frontend
 
 ## Getting Started
 
-First, run the development server:
+### Backend
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Navigate to the backend directory:**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    ```bash
+    cd backend
+    ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Create and activate a Conda environment:**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    ```bash
+    conda create -n myenv python=3.9
+    conda activate myenv
+    ```
 
-## Learn More
+3. **Install the required dependencies:**
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Run the FastAPI backend server:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    ```bash
+    uvicorn backend.main:app --reload
+    ```
 
-## Deploy on Vercel
+    The backend server should now be running on `http://127.0.0.1:8000`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Frontend
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. **Navigate to the frontend directory:**
+
+    ```bash
+    cd frontend
+    ```
+
+2. **Install the necessary packages:**
+
+    ```bash
+    npm install
+    ```
+
+3. **Run the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+    The frontend application should now be running on `http://localhost:3000`.
+
+## Project Structure
+
+```plaintext
+EmotionDo/
+│
+├── backend/
+│   ├── main.py
+|
+├── app/
+│   ├── page.tsx
+│   ├── ...
+└── README.md
