@@ -1,4 +1,5 @@
 # EmotionDo
+![pawelzmarlak-2024-11-03T05_12_13 072Z](https://github.com/user-attachments/assets/f6d91c13-ade5-4345-aa6e-77e53f7e8271)
 
 EmotionDo is a task management application that allows users to add tasks and classify them based on sentiment. This project consists of both a frontend and a backend, with the frontend built using Next.js and SCSS, and the backend built using FastAPI.
 
