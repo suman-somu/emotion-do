@@ -30,8 +30,8 @@ EmotionDo is a task management application that allows users to add tasks and cl
 2. **Create and activate a Conda environment:**
 
     ```bash
-    conda create -n myenv python=3.9
-    conda activate myenv
+    conda create -n emotion-do python=3.9
+    conda activate emotion-do
     ```
 
 3. **Install the required dependencies:**
@@ -43,18 +43,15 @@ EmotionDo is a task management application that allows users to add tasks and cl
 4. **Run the FastAPI backend server:**
 
     ```bash
-    uvicorn backend.main:app --reload
+    uvicorn main:app --reload
     ```
 
-    The backend server should now be running on `http://127.0.0.1:8000`.
+    The backend server should now be running on `http://localhost:8000`.
 
 ### Frontend
 
-1. **Navigate to the frontend directory:**
+1. **Navigate to the frontend/root directory:**
 
-    ```bash
-    cd frontend
-    ```
 
 2. **Install the necessary packages:**
 
