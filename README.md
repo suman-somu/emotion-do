@@ -12,7 +12,6 @@ EmotionDo is a task management application that allows users to add tasks and cl
 
 ## Prerequisites
 
-- **Node.js** (for the frontend)
 - **Python** and **Conda** (for the backend)
 - **FastAPI** for the backend
 - **Next.js** for the frontend
